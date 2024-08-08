@@ -1,9 +1,5 @@
 package example.cashcard;
 
-import java.net.URI;
-import java.util.List;
-import java.util.Optional;
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -11,6 +7,10 @@ import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import java.net.URI;
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/cashcards")
@@ -43,7 +43,7 @@ class CashCardController {
 
     @GetMapping
     private ResponseEntity<List<CashCard>> findAll(Pageable pageable) {
-        Page<CashCard> page = (Page<CashCard>) cashCardRepository.findAll(
+        Page<CashCard> page = cashCardRepository.findAll(
                 PageRequest.of(
                         pageable.getPageNumber(),
                         pageable.getPageSize(),
