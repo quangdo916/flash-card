@@ -57,3 +57,20 @@
 - **Data Integrity:**
   - **Consistency:** Confirm data consistency and adherence to constraints.
 
+## Configuration Tests
+
+**Purpose:** Ensure that the application's configuration settings are correctly applied and functioning as expected.
+
+- **General Configuration:**
+  - **Database Configuration:** Verify that the application correctly loads PostgreSQL connection settings, such as JDBC URL, username, and password. Confirm that JPA settings, including Hibernate properties, are correctly applied.
+  - **JPA Settings:** Test that Hibernate settings such as `ddl-auto` and SQL logging are configured as specified in the properties file.
+
+- **CORS Configuration:**
+  - **Allowed Origins:** Ensure that CORS settings permit requests from the specified origins. Verify that the allowed methods and headers are correctly configured.
+  - **Configuration Validation:** Confirm that CORS policy is correctly applied and restricts or allows access based on the configuration.
+
+- **Security Configuration:**
+  - **Access Control:** Verify that security rules are enforced for various endpoints, ensuring proper authentication and authorization mechanisms are in place.
+  - **Endpoint Protection:** Ensure that endpoints are secured as intended and that unauthorized access is properly restricted.
+
+
