@@ -57,9 +57,3 @@
 - **Data Integrity:**
   - **Consistency:** Confirm data consistency and adherence to constraints.
 
-- **Performance:**
-  - **Efficiency:** Verify query performance and scalability.
-
----
-
-By following these guidelines, you can ensure that each layer of your application is thoroughly tested, helping to isolate issues and improve debugging and maintenance.
